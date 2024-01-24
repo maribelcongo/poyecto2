@@ -157,3 +157,106 @@ rangoNegativo.addEventListener('input', filtros)
   })
   
   // -----------------------------
+
+
+             // TEXTO
+// -----------------------------
+
+  // INPUT QUE PINTE EN LA ETIQUETA P 
+inputSuperior.addEventListener( "input", (event) => {
+    const textoIngresado = event.target.value;
+    textImg.innerHTML = textoIngresado
+  })
+  
+  inputInferior.addEventListener( "input", (event) => {
+    const textoIngresado = event.target.value;
+    textImg2.innerHTML = textoIngresado
+  })
+  
+    // SIN TEXTO SUPERIOR Y INFERIOR
+  btnNoTextSup.addEventListener(`click`, () =>{textImg.classList.toggle("oculto");})
+  btnNoTextInf.addEventListener(`click`, () =>{textImg2.classList.toggle("oculto");})
+  
+    // FUENTE (font-family)
+  selectText.addEventListener("input", (event) =>{
+  const fuente = event.target.value
+  textImg.style.fontFamily = fuente
+  textImg2.style.fontFamily = fuente
+  })
+  
+    // FUENTE (font-size)
+  fontSize.addEventListener("input", (event) =>{
+  const tamanio = event.target.value
+  textImg.style.fontSize = `${tamanio}px`
+  textImg2.style.fontSize = `${tamanio}px`
+  })
+  
+    // ALINEACION DE TEXTO
+  alignCenter.addEventListener("click", (event) => { 
+  textImg.style.textAlign = "center"
+  textImg2.style.textAlign = "center"
+  })
+  alignRight.addEventListener("click", (event) => { 
+  textImg.style.textAlign = "right"
+  textImg2.style.textAlign = "right"
+  })
+  alignLeft.addEventListener("click", (event) => { 
+  textImg.style.textAlign = "left"
+  textImg2.style.textAlign = "left"
+  })
+  
+    // COLOR DE TEXTO 
+  inputColor.addEventListener( "input", (event) => {
+  colorText.innerHTML = event.target.value.toUpperCase()
+  textImg.style.color = event.target.value
+  textImg2.style.color = event.target.value
+  })
+  
+    // FONDO DE TEXTO
+  const actualizarFondo =  (event) => {
+  if(btnSinFondo.checked){
+    textImg.style.backgroundColor = "transparent"
+    textImg2.style.backgroundColor = "transparent"
+    textImg.style.position = 'absolute'
+    textImg2.style.position = 'absolute'
+  } else {
+    const color = inputFondo.value
+      fondoText.innerHTML = color.toUpperCase()
+      textImg.style.backgroundColor = color
+      textImg2.style.backgroundColor = color
+      textImg.style.position = 'static'
+    textImg2.style.position = 'static'
+  }     
+  }
+  inputFondo.addEventListener("input", actualizarFondo)
+  btnSinFondo.addEventListener("click", actualizarFondo)
+  
+    // CONTORNO
+  btnNinguno.addEventListener("click", (event) => {
+  textImg.style.textShadow = "none"
+  textImg2.style.textShadow = "none"
+  })
+  
+  btnClaro.addEventListener("click", (event) => {
+  textImg.style.textShadow = "-2px 2px 2px #fff, 2px -2px 2px #fff, 2px 2px 2px #fff, -2px -2px #fff"
+  textImg2.style.textShadow = "-2px 2px 2px #fff, 2px -2px 2px #fff, 2px 2px 2px #fff, -2px -2px #fff"
+  })
+  
+  btnOscuro.addEventListener("click", (event) => {
+  textImg.style.textShadow = "-2px 2px 2px #000, 2px -2px 2px #000, 2px 2px 2px #000, -2px -2px #000"
+  textImg2.style.textShadow = "-2px 2px 2px #000, 2px -2px 2px #000, 2px 2px 2px #000, -2px -2px #000"
+  })
+  
+    // ESPACIADO
+  padding.addEventListener("input", (event) => {
+  const valor = padding.value
+  textImg.style.padding = `${valor}% 2%`
+  textImg2.style.padding = `${valor}% 2%`
+  })
+  
+    // INTERLINEADO
+  interlineado.addEventListener("input", (event) => {
+  const valor = interlineado.value
+  textImg.style.lineHeight = valor
+  textImg2.style.lineHeight = valor
+  })
