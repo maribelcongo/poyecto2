@@ -11,18 +11,16 @@ Si quieres ver como quedó e interactuar con el  puedes dar click 👉🏻[enlac
 
 # Funcionalidades del proyecto:
 
-
-
 * Accesibilidad
 * Abrir y cerrar paneles
 * Botón de modo claro y oscuro
-Descargar meme
-Agregar imagen mediante una url
-Cambiar color de fondo
-Cambiar filtros de la imagen
-Botón de restablecer filtros
-Editar texto
-Remover texto
+* Descargar meme
+* Agregar imagen mediante una url
+* Cambiar color de fondo
+* Cambiar filtros de la imagen
+* Botón de restablecer filtros
+* Editar texto
+* Remover texto
 Cambiar color de fondo de texto
 Entre otras funcionalidades para editar memes
 
