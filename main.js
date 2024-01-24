@@ -51,3 +51,40 @@ const fondoText = document.getElementById("fondo-text") // span de fondo de text
 const padding = document.getElementById("padding-text") // input de espaciado de texto (aside text)
 const interlineado = document.getElementById("interlineado") // select de interlineado de texto (aside text)
 
+
+  // OCULTAR Y MOSTAR (JUNTO CON HEADER Y ASIDE)
+  btnTexto.addEventListener(`click`, () =>{
+    asideImg.classList.add("oculto")
+    asideText.classList.remove("oculto")
+})
+btnImagen.addEventListener(`click`, () =>{
+    asideText.classList.add("oculto")
+    asideImg.classList.remove("oculto")
+})
+
+  // TOGGLE DE MODO OSCURO
+  btnToggle.addEventListener("click", ()  => {
+    web.classList.toggle("web-black")
+    header.classList.toggle("header-black")
+    asideText.classList.toggle("aside-black")
+    asideImg.classList.toggle("aside-black")
+    selectText.classList.toggle("fuente-text")
+    colorText.classList.toggle("span-black")
+    fondoText.classList.toggle("span-black")
+    spanFondoImg.classList.toggle("span-black")
+    btnImagen.classList.toggle("letra-white")
+    btnTexto.classList.toggle("letra-white")
+    btnToggle.classList.toggle("letra-white")
+  }) 
+
+  // BOTON DE SALIR/OCULTAR DEL ASIDE 
+btnCancelar.addEventListener('click', (event) => {asideText.classList.add("oculto")})
+btnSalir.addEventListener('click', (event) => {asideImg.classList.add("oculto")})
+
+  // DESCARGAR MEME 
+const descargarMeme = () => {
+ domtoimage.toBlob(document.getElementById("canvas-meme")).then((blob) =>
+  saveAs(blob, 'mi-meme.png'))
+}
+btnDescarga.addEventListener("click", descargarMeme)
+
