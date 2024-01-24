@@ -88,3 +88,48 @@ const descargarMeme = () => {
 }
 btnDescarga.addEventListener("click", descargarMeme)
 
+
+
+      // IMAGEN
+// ---------------------
+
+  // DIV QUE TOME EL VALUE DEL INPUT PARA PINTAR LA IMAGEN 
+  inputImagen.addEventListener( "input", (event) => {
+    const srcIngresado = event.target.value;
+    img.style.backgroundImage = `url("${srcIngresado}")`
+})
+
+  //  INPUT QUE PINTE EL VALUE EN EL SPAN Y FONDO DE LA IMAGEN
+fondoImg.addEventListener( "input", (event) => {
+  spanFondoImg.innerHTML = event.target.value.toUpperCase()
+  img.style.backgroundColor = event.target.value
+})
+
+selectFondo.addEventListener( "click", (event) => {
+  img.style.backgroundBlendMode = event.target.value
+})
+
+  // FILTROS PARA LA IMAGEN
+const filtros = () => {
+  const brillo = rangoBrillo.value
+  const opacidad = rangoOpacidad.value
+  const contraste = rangoContraste.value
+  const desenfoque = rangoDesenfoque.value
+  const grises = escalasDeGrises.value
+  const hue = rangoHue.value
+  const sepia = rangoSepia.value
+  const saturno = rangoSaturno.value
+  const negativo = rangoNegativo.value
+  img.style.filter = `brightness(${brillo}) opacity(${opacidad}) contrast(${contraste}%) blur(${desenfoque}px) 
+  grayscale(${grises}%) hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturno}%) invert(${negativo})`
+}
+rangoBrillo.addEventListener('input', filtros)
+rangoOpacidad.addEventListener('input', filtros)
+rangoContraste.addEventListener('input', filtros)
+rangoDesenfoque.addEventListener('input', filtros)
+escalasDeGrises.addEventListener('input', filtros)
+rangoHue.addEventListener('input', filtros)
+rangoSepia.addEventListener('input', filtros)
+rangoSaturno.addEventListener('input', filtros)
+rangoNegativo.addEventListener('input', filtros)
+

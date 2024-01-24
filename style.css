@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,10 +16,11 @@ body{
 .contenedor-web{
     display: flex;
     flex-direction: row-reverse;
-    background-color: rgb(237, 235, 235);
+    background-color: rgb(254 212 255);
     color: rgb(44, 44, 44);
     height: 100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: Rowdies;
+
 }
 
 .contenido-nav-section{
@@ -89,6 +94,7 @@ section{
     position: relative;
     display: flex;
     flex-direction: column;
+    
 }
 
 #div-img{
@@ -272,13 +278,13 @@ option{
 
 /* contenedor-web */
 .web-black{
-    background-color: rgb(49, 49, 59);
+    background-color: rgb(99, 3, 78);
     color: white;
 }
 
 /* header */
 .header-black{
-    background-color: rgb(29, 29, 46);
+    background-color: rgb(99, 3, 78);
 }
 
 .letra-white{
@@ -287,7 +293,7 @@ option{
 
 /* aside */
 .aside-black{
-    background-color: rgb(42, 42, 61);
+    background-color: rgb(99, 3, 78);
 }
 
 /* fuente-text, aside de texto */
