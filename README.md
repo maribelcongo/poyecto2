@@ -5,7 +5,7 @@
 
 
 
-Si quieres ver como quedó e interactuar con el  puedes dar click 👉🏻[enlace](https://maribelcongo.github.io/mi-porfolio/)
+Si quieres ver como quedó e interactuar con el  puedes dar click 👉🏻[aqui]([https://maribelcongo.github.io/mi-porfolio/](https://maribelcongo.github.io/poyecto2/))
 
 
 
