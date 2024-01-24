@@ -135,3 +135,167 @@ section{
     background-color: rgb(6, 82, 3);
 }
 
+
+
+/* -----------------------------
+        ASIDE DE TEXTO
+------------------------------*/
+.aside-text, .aside-img{
+    width: 260px;
+    height:100%;
+    background-color: rgb(230, 230, 230);
+    position: fixed;
+    overflow: auto;
+}
+
+.contenedor-asideText, .contenedor-asideImg{
+    width: 90%;
+    padding: 4%;
+}
+
+.cancelar{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    color: red;
+    text-align:center;
+}
+
+h3{
+    font-size: 16px;
+}
+
+h2{
+    text-align: center;
+}
+
+.panel-de-control{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    max-width: 100%;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+input{
+    height: 20px;
+    margin-top: 1%;
+    padding: 2%;
+    font-size: 18px;
+    outline: 0.2px ;
+}
+
+span{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+/*** FUENTES ***/
+.align{
+    width: 20%;
+    height: 30px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+#font-size{
+    width: 28%;
+}
+
+select{
+    padding: 1%;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+option{
+    padding: 1%;
+    background-color: white;
+    font-size: 16px;
+}
+
+/*** COLOR Y FONDO ***/
+.contenedor-de-control{
+    display:flex;
+}
+
+.contenedor-fondo-texto{
+    margin-left: 2% ;
+}
+.contenedor-fondo-text, .contenedor-color-text{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-fondo-texto{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.input-color{
+    width: 25px;
+    height: 25px; 
+    background-color: transparent;
+    border: 0; 
+    font-size: 16px;
+}
+
+
+/*** CONTORNO ***/
+.contorno{
+    width: 34%;
+    padding: 0.5%;
+    height: 40px;
+    font-weight: 900;
+    color: rgb(60, 60, 60);
+    background-color: white;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+#bnt-claro{
+    width: 27%;
+    padding: 1%;
+}
+/* **********************************************
+**************** MODO OSCURO ********************* 
+************************************************/
+
+/* contenedor-web */
+.web-black{
+    background-color: rgb(49, 49, 59);
+    color: white;
+}
+
+/* header */
+.header-black{
+    background-color: rgb(29, 29, 46);
+}
+
+.letra-white{
+    color: white;
+}
+
+/* aside */
+.aside-black{
+    background-color: rgb(42, 42, 61);
+}
+
+/* fuente-text, aside de texto */
+.fuente-text{
+    color: black;
+    background-color: white;
+}
+
+.span-black{
+    color: black;
+}
