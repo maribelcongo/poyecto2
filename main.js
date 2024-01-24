@@ -133,3 +133,27 @@ rangoSepia.addEventListener('input', filtros)
 rangoSaturno.addEventListener('input', filtros)
 rangoNegativo.addEventListener('input', filtros)
 
+
+ // BOTON DE REESTABLECER FILTROS   
+ btnRestablecer.addEventListener("click", (event) => {
+    const filtroBrillo = rangoBrillo.value = 1
+    const filtroOpacidad = rangoOpacidad.value = 1
+    const filtroContraste = rangoContraste.value = 100
+    const filtroDesenfoque = rangoDesenfoque.value = 0
+    const filtroGrises = escalasDeGrises.value = 0
+    const filtroHue = rangoHue.value = 0
+    const filtroSepia = rangoSepia.value =  0
+    const filtroSaturno = rangoSaturno.value = 0 
+    const filtroNegativo = rangoNegativo.value = 0
+    img.style.filter = `brightness(${filtroBrillo})` 
+    img.style.filter = `opacity(${filtroOpacidad})` 
+    img.style.filter =  `contrast(${filtroContraste}%)` 
+    img.style.filter = `blur(${filtroDesenfoque}px) `
+    img.style.filter = `grayscale(${filtroGrises}%) `
+    img.style.filter = `hue-rotate(${filtroHue}deg)`
+    img.style.filter = `sepia(${filtroSepia}%)`
+    img.style.filter = `saturate(${filtroSaturno}%)`
+    img.style.filter = `invert(${filtroNegativo})`
+  })
+  
+  // -----------------------------
