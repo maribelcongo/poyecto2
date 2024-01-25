@@ -55,7 +55,7 @@ h1{
     border: 0;
     background-color: transparent;
 }
-
+/* -------------hover para botones------------------ */
  #btn-texto:hover{
     background-color:rgb(233, 126, 188);
 }
@@ -272,9 +272,9 @@ option{
     width: 27%;
     padding: 1%;
 }
-/* **********************************************
-**************** MODO OSCURO ********************* 
-************************************************/
+
+/* -----------modo oscuro--------------- */
+
 
 /* contenedor-web */
 .web-black{
