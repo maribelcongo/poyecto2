@@ -5,14 +5,23 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+html , body{
+overflow: hidden;
+height: 100%;
+width: 101%;
+margin: 0px;
+padding: 0px;
+
 }
 
-body{
+ body{
     margin: 0;
     padding: 0;
     height: 120vh;
-}
-
+} 
+/* ---------------estilos del contenedor principal----- */
 .contenedor-web{
     display: flex;
     flex-direction: row-reverse;
@@ -23,12 +32,23 @@ body{
 
 }
 
+/*      width: 100%;
+    max-width: 600px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}*/
+
+
 .contenido-nav-section{
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 
 /* ------------estylos del header ------------ */
 header{
@@ -39,16 +59,17 @@ header{
 }
 /* ---------fin de estilos del header ---------- */
 
+h1{
+    font-size: 2.2em;
+}
+
 
 nav{
     width: 100%;
 }
 
-h1{
-    font-size: 2.2em;
-}
-
-#btn-toggle, #btn-imagen, #btn-texto{
+/* --------estilosdebotones de texto imagen modo C/O------- */
+#btn-toggle, #btn-imagen, #btn-texto {
     padding: 8px;
     margin: 0 10px;
     font-size: 16px;
@@ -87,15 +108,17 @@ section{
 }
 
 .contenedor-de-meme{
-    width: 100%;
-    max-width: 600px;
-    height: 580px;
-    background-color: black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+   
+     width: 100%;
+     max-width: 600px;
+     height: 500px;
+     background-color: black;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+ }
+
     
-}
 
 #div-img{
     width: 100%;
@@ -127,11 +150,10 @@ section{
 -------------------------------------*/
 .btn-descargar{
     width: 170px;
-    margin-top: 1.5%;
-    font-size: 16px;
+    margin-top: 1%;
+    font-size: 12px;
     border: 0;
-    padding: 8px;
-    text-align: center;
+    padding: 4px;
     color: white;
     border-radius: 5px;
     background-color: rgb(2, 96, 2);
@@ -155,8 +177,9 @@ section{
 }
 
 .contenedor-asideText, .contenedor-asideImg{
-    width: 90%;
-    padding: 4%;
+    width: 80%;
+     padding: 4%; 
+ 
 }
 
 .cancelar{
@@ -304,4 +327,13 @@ option{
 
 .span-black{
     color: black;
+}
+
+
+#btn-restablecer{
+
+background-color: rgb(245, 155, 222);
+padding: 8px;
+border: none;
+border-radius: 15px;
 }
