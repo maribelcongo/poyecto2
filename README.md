@@ -1,7 +1,8 @@
 # Generador de memes 
 
 # Modo claro
-![Captura de pantalla (20)](https://github.com/maribelcongo/poyecto2/assets/123903736/27ab3380-18f8-4b05-95e4-a389c7dd10ea)
+![Captura de pantalla (29)](https://github.com/maribelcongo/poyecto2/assets/123903736/29744554-eb54-4e4d-88f3-5a4dfa4e5d36)
+
 # Modo oscuro
 ![Captura de pantalla (28)](https://github.com/maribelcongo/poyecto2/assets/123903736/151ffd08-0dc5-4d30-ad21-70735897f828)
 
