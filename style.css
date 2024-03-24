@@ -83,7 +83,7 @@ nav {
 /* /------------------estilos para secction------------ */
 section {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -132,14 +132,14 @@ section {
 -------------------------------------*/
 .btn-descargar {
 	width: 170px;
-	margin-top: 1%;
+	height: 40px;
 	font-size: 12px;
 	border: 0;
 	padding: 4px;
 	color: white;
 	border-radius: 5px;
 	background-color: rgb(2, 96, 2);
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 .btn-descargar:hover {
@@ -281,7 +281,6 @@ option {
 
 /* contenedor-web */
 .web-black {
-	
 	background-image: url(imagen/estrellas-colores-sobre-fondo-blanco_1110-524.avif);
 
 	color: white;
