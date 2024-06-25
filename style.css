@@ -99,6 +99,13 @@ section {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	margin: auto;
+}
+
+.contenedorMeme {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #div-img {
