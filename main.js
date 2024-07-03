@@ -226,8 +226,8 @@ inputSuperior.addEventListener( "input", (event) => {
       fondoText.innerHTML = color.toUpperCase()
       textImg.style.backgroundColor = color
       textImg2.style.backgroundColor = color
-       textImg.style.color = "white"; 
-    textImg2.style.color = "white"; 
+       textImg.style.color = "black"; 
+    textImg2.style.color = "black"; 
       textImg.style.position = 'static'
     textImg2.style.position = 'static'
   }     

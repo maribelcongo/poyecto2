@@ -40,125 +40,104 @@
     
   <!-- ---------------------------------aside--------------------------------- -->
 
+<!-- ASIDE DE TEXTO -->
+<aside id="aside-text" class="aside-text oculto">
+  <div class="contenedor-asideText">
+    <a id="cancelar" class="cancelar" href="#" aria-label="cerrar panel">x</a>
+    <h2>TEXTO</h2>
 
-                        <!-- ASIDE DE TEXTO -->
- <aside id="aside-text" class="aside-text oculto">
-    <div class="contenedor-asideText">
-        <a id="cancelar" class="cancelar" href="#" aria-label="cerrar panel">x</a>
-        <h2>TEXTO</h2>
-                    
-                        
- <div class="panel-de-control">
-         <h3>SUPERIOR</h3>
-        
-         <input id="superior" type="text" value="TOP TEXT" aria-label="texto superior" >
-         
-    <div>
-         <input type="checkbox" id="sin-text-superior" >
-        <label for="sin-text-superior">Sin texto Superior</label>
-    </div>
-</div>
-                    
-                    
- <div class="panel-de-control">
-          <h3>INFERIOR</h3>
-         <input id="inferior" type="text" value="BOTTOM TEXT" aria-label="texto inferior" >
-                                 
-      <div>
-          <input type="checkbox" name="sin-text-inferior" id="sin-text-inferior" >
-          <label for="sin-text-inferior">Sin texto inferior</label>
-      </div>
- </div>
-                    
-                    
-<div class=" panel-de-control">
-     <h3>FUENTE</h3>
-
-<select name="Familia de fuente" id="fuente-text" aria-label="selector de tipo de fuente">
-      <option value="Arial">Arial</option>
-      <option value="Arial Black" selected>Arial Black</option>
-      <option value="American Typewriter">American Typewriter</option>
-      <option value="Andale Mono">Andale Mono</option>
-      <option value="Comic Sans MS">Comic Sans MS</option>
-      <option value="Helvetica">Helvetica</option>
-      <option value="Impact">Impact</option>
-      <option value="Verdana">Verdana</option>
-      <option value="Times New Roman">Times New Roman</option>                           
-</select>
-                                
-
-  <div>
-                                 
-     <input id="font-size" type="number" value="40" max="60" aria-label="tamaño de fuente" >
-      <button id="align-left" class="align" aria-label="alinear texto a la izquierda"><i class="fa-solid fa-align-left"></i></button>
-      <button id="align-center" class="align" aria-label="alinear texto al centro"><i class="fa-solid fa-align-center"></i></button>
-      <button id="align-right" class="align" aria-label="alinear texto a la derecha"><i class="fa-solid fa-align-right"></i></button>
-  </div>
-
-</div>                 
-                    
-    <div class=" panel-de-control">
-
-      <div class="contenedor-de-control">
-
-    <div class="contenedor-color-text">
-
-       
-           <h3>COLOR</h3>
-           <div class="div-fondo-texto">
-           <input type="color" name="color-text-input" id="color-text-input" class="input-color" aria-label="color de texto">
-           <span id="color-text" aria-hidden="true">#000000</span>
-    </div>
-</div>
-                                 
-   <div class="contenedor-fondo-text">
-           <h3>FONDO</h3>
-           <div class="div-fondo-texto">
-                                     
-            <input type="color"  id="fondo-text-input" class="input-color" value="#FFFFFF" aria-label="color de fondo de texto">
-           <span id="fondo-text" aria-hidden="true">#FFFFFF</span>
-     </div>
-   </div>
- </div>
-        
- <div>
-        <input type="checkbox"  id="sin-fondo">
-        <label for="sin-fondo">Fondo transparente</label>
-  </div>
-</div>
-                    
-                    
- <div class="panel-de-control">
-     <h3>CONTORNO</h3>
-    
-     <div>
-     <button id="bnt-ninguno" class="contorno" aria-label="ningún contorno">NINGUNO</button>
-     <button id="bnt-claro" class="contorno" aria-label="contorno claro">CLARO</button>
-     <button id="bnt-oscuro" class="contorno" aria-label="contorno oscuro">OSCURO</button>
-  </div>
-</div>
-                    
-                    
-<div class="panel-de-control">
-    <h3>ESPACIADO</h3>
     <div class="panel-de-control">
+      <h3>SUPERIOR</h3>
+      <input id="superior" type="text" value="TOP TEXT" aria-label="texto superior">
+      <div>
+        <input type="checkbox" id="sin-text-superior">
+        <label for="sin-text-superior">Sin texto Superior</label>
+      </div>
+    </div>
+
+    <div class="panel-de-control">
+      <h3>INFERIOR</h3>
+      <input id="inferior" type="text" value="BOTTOM TEXT" aria-label="texto inferior">
+      <div>
+        <input type="checkbox" name="sin-text-inferior" id="sin-text-inferior">
+        <label for="sin-text-inferior">Sin texto inferior</label>
+      </div>
+    </div>
+
+    <div class="panel-de-control">
+      <h3>FUENTE</h3>
+      <select name="Familia de fuente" id="fuente-text" aria-label="selector de tipo de fuente">
+        <option value="Arial">Arial</option>
+        <option value="Arial Black" selected>Arial Black</option>
+        <option value="American Typewriter">American Typewriter</option>
+        <option value="Andale Mono">Andale Mono</option>
+        <option value="Comic Sans MS">Comic Sans MS</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Impact">Impact</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Times New Roman">Times New Roman</option>
+      </select>
+
+      <div>
+        <input id="font-size" type="number" value="40" max="60" aria-label="tamaño de fuente">
+        <button id="align-left" class="align" aria-label="alinear texto a la izquierda"><i class="fa-solid fa-align-left"></i></button>
+        <button id="align-center" class="align" aria-label="alinear texto al centro"><i class="fa-solid fa-align-center"></i></button>
+        <button id="align-right" class="align" aria-label="alinear texto a la derecha"><i class="fa-solid fa-align-right"></i></button>
+      </div>
+    </div>
+
+    <div class="panel-de-control">
+      <div class="contenedor-de-control">
+        <div class="contenedor-color-text">
+          <h3>COLOR</h3>
+          <div class="div-fondo-texto">
+            <input type="color" name="color-text-input" id="color-text-input" class="input-color" aria-label="color de texto">
+            <span id="color-text" aria-hidden="true">#000000</span>
+          </div>
+        </div>
+        <div class="contenedor-fondo-text">
+          <h3>FONDO</h3>
+          <div class="div-fondo-texto">
+            <input type="color" id="fondo-text-input" class="input-color" value="#FFFFFF" aria-label="color de fondo de texto">
+            <span id="fondo-text" aria-hidden="true">#FFFFFF</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="sin-fondo">
+        <label for="sin-fondo">Fondo transparente</label>
+      </div>
+    </div>
+
+    <div class="panel-de-control">
+      <h3>CONTORNO</h3>
+      <div>
+        <button id="bnt-ninguno" class="contorno" aria-label="ningún contorno">NINGUNO</button>
+        <button id="bnt-claro" class="contorno" aria-label="contorno claro">CLARO</button>
+        <button id="bnt-oscuro" class="contorno" aria-label="contorno oscuro">OSCURO</button>
+      </div>
+    </div>
+
+    <div class="panel-de-control">
+      <h3>ESPACIADO</h3>
+      <div class="panel-de-control">
         <h3>INTERLINEADO</h3>
         <select id="interlineado" aria-label="interlineado">
-            <option value="0.8">0.8</option>
-            <option value="1">1</option>
-            <option value="1.2" selected>1.2</option>
-            <option value="1.5">1.5</option>
-            <option value="2">2</option>
-            <option value="2.5">2.5</option>
+          <option value="0.8">0.8</option>
+          <option value="1">1</option>
+          <option value="1.2" selected>1.2</option>
+          <option value="1.5">1.5</option>
+          <option value="2">2</option>
+          <option value="2.5">2.5</option>
         </select>
-    </div>
-    <div>
+      </div>
+      <div>
         <input type="number" max="5" step="0.5" min="1" value="2" id="padding-text" aria-label="espaciado">
+      </div>
     </div>
-</div>
-
+  </div>
 </aside>
-                          <!-- ---------------aside de imagen----------------- -->
+            <!-- ---------------aside de imagen----------------- -->
 
 
 <aside id="aside-img" class="aside-img">
@@ -170,76 +149,75 @@
         <h3>URL</h3>
         <input type="url" id="url" aria-label="url de imagen">
       </div>
-
-      <div class="panel-de-control">
-        <h3>FONDO</h3>
-        <div class="div-input-fondo">
-          <div class="div-de-fondo">
-            <input class="input-color" type="color" id="fondo-img"  aria-label="color de fondo de imagen">
-            <span id="span-fondo-img" aria-hidden="true">#000000</span>
-          </div>
-          <div class="div-de-fondo">
-            <select id="select-fondo" aria-label="modo de mezcla de fondo de imagen">
-              <option value="unset">Ninguno</option>
-              <option value="lighten">Aclarar</option>
-              <option value="darken">Oscurecer</option>
-              <option value="difference">Diferencia</option>
-              <option value="luminosity">Luminosidad</option>
-              <option value="multiply">Multiplicar</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel-de-control">
-        <h3>FILTROS</h3>
-        <label for="brillo">BRILLO</label>
-        <input type="range" id="brillo" min="0" step="0.1" max="1"  class="filtro" value="1">
-      </div>
-
-      <div class="panel-de-control">
-        <label for="opacidad">OPACIDAD</label>
-        <input type="range" id="opacidad" min="0" step="0.1" max="1" class="filtro"  value="1">
-      </div>
-
-      <div class="panel-de-control">
-        <label for="contraste">CONTRASTE</label>
-        <input type="range" id="contraste" min="100" step="1" max="1000" class="filtro" value="100">
-      </div>
-
-      <div class=" panel-de-control">
-        <label for="desenfoque">DESENFOQUE</label>
-        <input type="range" id="desenfoque" min="0" step="0.1" max="10" class="filtro" value="0">
-      </div>
-
-      <div class="panel-de-control">
-        <label for="grises">ESCALA DE GRISES</label>
-        <input type="range" id="grises" min="0" step="1" max="100" class="filtro" value="0">
-      </div>
-
-      <div class="panel-de-control">
-        <label for="sepia">SEPIA</label>
-        <input type="range" id="sepia" min="0" step="1" max="100" class="filtro" value="0">
-      </div>
-
-      <div class="panel-de-control">
-        <label for="hue">HUE</label>
-        <input type="range" id="hue" min="0" step="1" max="359" class="filtro" value="0">
-      </div>
-
-      <div class="panel-de-control">
-        <label for="saturno">SATURNO</label>
-        <input type="range" id="saturno" min="100" step="10" max="1000" class="filtro" value="100">
-      </div>
-
-      <div class="panel-de-control">
-        <label for="negativo">NEGATIVO</label>
-        <input type="range" id="negativo" min="0" step="0.1" max="1" class="filtro" value="0">
-      </div>
-      <button id="btn-restablecer" class="boton-restablecer">Restablecer filtros</button>
+<div class="panel-de-control">
+  <h3>FONDO</h3>
+  <div class="div-input-fondo">
+    <div class="div-de-fondo">
+      <input class="input-color" type="color" id="fondo-img" aria-label="color de fondo de imagen">
+      <span id="span-fondo-img" aria-hidden="true">#000000</span>
     </div>
-
+    <div class="div-de-fondo">
+      <select id="select-fondo" aria-label="modo de mezcla de fondo de imagen">
+        <option value="unset">Ninguno</option>
+        <option value="lighten">Aclarar</option>
+        <option value="darken">Oscurecer</option>
+        <option value="difference">Diferencia</option>
+        <option value="luminosity">Luminosidad</option>
+        <option value="multiply">Multiplicar</option>
+      </select>
+    </div>
+  </div>
 </div>
+
+<div class="panel-de-control">
+  <h3>FILTROS</h3>
+  <label for="brillo">BRILLO</label>
+  <input type="range" id="brillo" min="0" step="0.1" max="1" class="filtro" value="1">
+</div>
+
+<div class="panel-de-control">
+  <label for="opacidad">OPACIDAD</label>
+  <input type="range" id="opacidad" min="0" step="0.1" max="1" class="filtro" value="1">
+</div>
+
+<div class="panel-de-control">
+  <label for="contraste">CONTRASTE</label>
+  <input type="range" id="contraste" min="100" step="1" max="1000" class="filtro" value="100">
+</div>
+
+<div class="panel-de-control">
+  <label for="desenfoque">DESENFOQUE</label>
+  <input type="range" id="desenfoque" min="0" step="0.1" max="10" class="filtro" value="0">
+</div>
+
+<div class="panel-de-control">
+  <label for="grises">ESCALA DE GRISES</label>
+  <input type="range" id="grises" min="0" step="1" max="100" class="filtro" value="0">
+</div>
+
+<div class="panel-de-control">
+  <label for="sepia">SEPIA</label>
+  <input type="range" id="sepia" min="0" step="1" max="100" class="filtro" value="0">
+</div>
+
+<div class="panel-de-control">
+  <label for="hue">HUE</label>
+  <input type="range" id="hue" min="0" step="1" max="359" class="filtro" value="0">
+</div>
+
+<div class="panel-de-control">
+  <label for="saturno">SATURNO</label>
+  <input type="range" id="saturno" min="100" step="10" max="1000" class="filtro" value="100">
+</div>
+
+<div class="panel-de-control">
+  <label for="negativo">NEGATIVO</label>
+  <input type="range" id="negativo" min="0" step="0.1" max="1" class="filtro" value="0">
+</div>
+
+<button id="btn-restablecer" class="boton-restablecer">Restablecer filtros</button>
+</div>
+
   </aside>
 
 
