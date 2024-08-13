@@ -5,11 +5,8 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 body {
-	margin: 0;
-	padding: 0;
-	height: 120vh;
+	min-height: 100vh;
 }
 /* ---------------estilos del contenedor principal----- */
 .contenedor-web {
@@ -23,8 +20,6 @@ body {
 
 .contenido-nav-section {
 	width: 100%;
-	height: 100vh;
-	flex-direction: column;
 }
 
 /* ------------estylos del header ------------ */
@@ -150,15 +145,16 @@ section {
 .aside-text,
 .aside-img {
 	background-color: rgb(230, 230, 230);
-	overflow: auto;
+	overflow-y: auto;
 	position: absolute;
-	width: 28%;
+	height: 100vh;
 }
 
 .contenedor-asideText,
 .contenedor-asideImg {
-	width: 100%;
+	width: 80%;
 	padding: 4%;
+	max-width: 300px;
 }
 
 .cancelar {
