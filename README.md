@@ -7,7 +7,7 @@
 ![Captura de pantalla (28)](https://github.com/maribelcongo/poyecto2/assets/123903736/151ffd08-0dc5-4d30-ad21-70735897f828)
 
 
-Si quieres ver como quedó e interactuar con el  puedes dar click 💓[enlace](https://github.com/maribelcongo/proyecto-meme.git)
+Si quieres ver como quedó e interactuar con el  puedes dar click 💓[enlace](https://maribelcongo.github.io/proyecto-meme/)
 
 
 
